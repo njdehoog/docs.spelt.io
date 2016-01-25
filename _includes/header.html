@@ -1,0 +1,7 @@
+<header>
+  <h1>Spelt Docs</h1>
+  <h3>Getting Started</h3>
+  {% for post in site.posts %}
+  <p class="view"><a href="{{ post.url }}">{{ post.title }}</a></p>
+  {% endfor %}
+ </header>
