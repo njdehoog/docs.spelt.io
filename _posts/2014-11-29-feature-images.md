@@ -1,6 +1,10 @@
 ---
 layout: post
 title: Creating a project
+category: getting-started
 ---
 
-Explain how to create a project
+<br>
+![Working on it](http://i.imgur.com/9Jfai3g.gif)
+
+![Working](http://i.imgur.com/tx7WS.gif)
