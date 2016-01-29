@@ -2,6 +2,7 @@
 layout: post
 title: Creating a project
 category: getting-started
+permalink: create-project
 ---
 
 <br>

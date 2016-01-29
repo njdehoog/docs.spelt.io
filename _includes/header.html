@@ -13,6 +13,17 @@
 	  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
 	  {% endfor %}
 	  </ul>
-	  <h3>Deployment</h3>
+	  <h3>Customization</h3>
+	  <ul>
+	  {% for post in customization %}
+	  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+	  {% endfor %}
+	  </ul>
+	  <h3>Publishing</h3>
+	  <ul>
+	  {% for post in publishing %}
+	  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+	  {% endfor %}
+	  </ul>
   </nav>
  </header>
