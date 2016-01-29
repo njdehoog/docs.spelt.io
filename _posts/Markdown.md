@@ -192,6 +192,8 @@ And [GitHub style](https://help.github.com/articles/creating-and-highlighting-co
     }
     ```
 
+Which produces:
+
 ```swift
 // Did you know Spelt is completely written in Swift?
 // It looks something like this:
