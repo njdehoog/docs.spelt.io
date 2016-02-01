@@ -1,11 +1,12 @@
 ---
 layout: post
-title: Creating a project
+title: Creating a new project
 category: getting-started
-permalink: create-project
+permalink: creating-new-project
 ---
 
-<br>
-![Working on it](http://i.imgur.com/9Jfai3g.gif)
+To create a new project, select `File > New Blog` from the main menu. This will open a window where you can select the theme for your blog. Themes can be previewed in the browser by clicking the _Preview in Browser_ button.
 
-![Working](http://i.imgur.com/tx7WS.gif)
+When you have selected the theme you want to use, click next, and you will be asked where you want to save your new project. Spelt will place your project files in the folder you choose.
+
+You are now ready to start blogging. If you're not sure where to go from here, check out [Basic usage](/basic-usage/).

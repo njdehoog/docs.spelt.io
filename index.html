@@ -1,9 +1,9 @@
 ---
 layout: default
 ---
-{% for post in posts limit:1 %}
-
+{% for post in posts %}
+{% if post.title == "Introduction" %}
 <h1>{{ post.title }}</h1>
 {{ post.content }}
-
+{% endif %}
 {% endfor %}
