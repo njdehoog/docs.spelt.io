@@ -3,6 +3,7 @@ layout: post
 title: Front matter
 date: 2016-01-25 17:45:22 +0100
 category: writing
+permalink: front-matter
 ---
 
 Spelt uses front matter to determine how it should render your files. Any file that contains front matter will be processed by the rendering engine. The front matter must start on the first line of a file, is defined by a set of triple-dashed lines, like in this example:

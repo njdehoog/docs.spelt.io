@@ -5,12 +5,11 @@ category: getting-started
 permalink: directory-structure
 ---
 
+When creating a new project, Spelt creates a folder structure similar to the one below. The structure of your project folder is important. It ensures that Spelt knows where to look for which type of files when generating your site. Spelt will help you maintain this structure, for instance, when creating a blog post from the app, it will automatically be placed in the `_posts` directory.
+
 ```text
 .
 ├── _config.yml
-├── _drafts
-|   ├── begin-with-the-crazy-ideas.textile
-|   └── on-simplicity-in-technology.markdown
 ├── _includes
 |   ├── footer.html
 |   └── header.html
@@ -18,11 +17,20 @@ permalink: directory-structure
 |   ├── default.html
 |   └── post.html
 ├── _posts
-|   ├── 2007-10-29-why-every-programmer-should-play-nethack.textile
-|   └── 2009-04-26-barcamp-boston-4-roundup.textile
-├── _data
-|   └── members.ml
-├── _site
-├── .jekyll-metadata
+|   ├── Sample Post.md
+|   └── Markdown and HTML.md
+├── _build
+├── _sass
 └── index.html
 ```
+
+| File/Directory | Description |
+| ------------- | ------------- |
+| `_config.yml`  | Stores configuration variables for your site. |
+| `_includes` | Contains partial template files that can be included in templates using the following syntax: <br><code>&#123;% include "header.html" %}</code>  |
+| `_layouts`  | These are the main template files. Files can be configured to be rendered into a template by setting the `layout` parameter in its [front matter](/front-matter/). |
+| `_posts` | The directory that contains your blog posts. |
+| `_build` | This is where Spelt puts your generated site when previewing or publishing. |
+| `_sass` | Sass includes directory. This is where you should put your sass partials if you use them. |
+| `index.html` | Provides the starting point for your blog. Will be processed by Spelt provided that it contains [front matter](/front-matter/). |
+| Other files/folders | Other files and folders will be copied verbatim to the generated site, unless a file contains [front matter](/front-matter/), in which case it will be processed by the rendering engine. |
