@@ -15,4 +15,4 @@ And they will appear on your site like this:
 
 ![Hiker](/img/hiker.jpg)
 
-> Tip: if you know your site will only ever be hosted at the root URL of your domain, e.g. http://example.com and __not__ http://blog.example.com, you can skip the <code>&#123;&#123; site.url }}</code> part and just use: `/img/hiker.jpg` as the path.
+> Tip: if you know your site will only ever be hosted at the root URL of your domain, e.g. http://example.com and __not__ http://example.com/blog, you can skip the <code>&#123;&#123; site.url }}</code> part and just use: `/img/hiker.jpg` as the path.
