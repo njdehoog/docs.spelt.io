@@ -1,0 +1,13 @@
+---
+staging:
+  route53_enabled: false
+  access_key_id: 
+  bucket_name: 
+  type: s3
+  bucket_region: us-east-1
+production:
+  route53_enabled: true
+  access_key_id: AKIAI7FVUXEEOU7DLMGQ
+  bucket_name: docs.spelt.io
+  type: s3
+  bucket_region: us-east-1
