@@ -85,3 +85,6 @@ Spelt currently supports the following filters:
 | __Markdownify__<br />Convert a Markdown-formatted string into HTML. | <code>&#123;{ "# Title" \| markdownify  }}</code><br/><code class="output">&lt;h1>Title&lt;/h1></code> |
 | __XML Escape__<br />Escape some text for use in XML. | <code>&#123;{ "this&that" \| xml_escape  }}</code><br/><div class="output">`this&amp;that`</div> |
 | __URL Encode__<br />Convert string for use in URLs by percent-encoding disallowed characters. | <code>&#123;{ "some string" \| url_encode  }}</code><br/><code class="output">some%20string</code> |
+| __Prepend__<br />Prepends characters to a string. | <code>&#123;{ ", World!" \| prepend: "Hello"  }}</code><br/><code class="output">Hello, World!</code> |
+| __Append__<br />Appends characters to a string. | <code>&#123;{ "Hello" \| prepend: ", World!"  }}</code><br/><code class="output">Hello, World!</code> |
+| __Replace__<br />Replaces all occurrences of a string with specified replacement. | <code>&#123;{ "Hey there!"\|replace:"there","you" }}</code><br/><code class="output">Hey you!</code> |
