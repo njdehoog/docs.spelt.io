@@ -83,5 +83,5 @@ Spelt currently supports the following filters:
 | __Date to RFC-822__<br />Convert a date into the RFC-822 format used for RSS feeds. | <code>&#123;{ date \| date_to_rfc822  }}</code><br/><code class="output">Fri, 29 Jan 2016 13:42:45 +0100</code> |
 | __Date to XML Schema__<br />Convert a Date into XML Schema (ISO 8601) format. | <code>&#123;{ date \| date_to_xmlschema  }}</code><br/><code class="output">2016-01-29T13:42:45+01:00</code> |
 | __Markdownify__<br />Convert a Markdown-formatted string into HTML. | <code>&#123;{ "# Title" \| markdownify  }}</code><br/><code class="output">&lt;h1>Title&lt;/h1></code> |
-| __XML Escape__<br />Escape some text for use in XML. | <code>&#123;{ post.excerpt \| xml_escape  }}</code> |
-| __URL Encode__<br />Escape some text for use in XML. | <code>&#123;{ post.excerpt \| url_encode  }}</code> |
+| __XML Escape__<br />Escape some text for use in XML. | <code>&#123;{ "this&that" \| xml_escape  }}</code><br/><div class="output">`this&amp;that`</div> |
+| __URL Encode__<br />Convert string for use in URLs by percent-encoding disallowed characters. | <code>&#123;{ "some string" \| url_encode  }}</code><br/><code class="output">some%20string</code> |

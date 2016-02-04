@@ -80,7 +80,7 @@ code {
   white-space: pre;
 }
 
-code.output {
+code.output, div.output code {
   margin-top: 5px;
   color: #CC8833;
 }
