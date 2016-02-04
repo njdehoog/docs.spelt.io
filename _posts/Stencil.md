@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Layouts
-date: 2016-01-29 12:42:45 +0100
+date: 2016-01-29 13:42:45 +0100
 category: customization
 permalink: layouts
 ---
@@ -60,3 +60,28 @@ The `ifnot` tag renders its contents when a variable is falsey (evaluates to fal
 <pre><code class="handlebars">&#123;% ifnot post.category %}
  &lt;p>Category undefined&lt;/p>
 &#123;% endif %}</code></pre>
+
+## Filters
+
+Filters allow you to transform the value of a variable in your template. For example:
+
+<pre><code class="handlebars">&#123;{ title | uppercase }}</code></pre>
+
+Or:
+
+<pre><code class="handlebars">&#123;{ url | prepend: site.url }}</code></pre>
+
+Spelt currently supports the following filters:
+
+| Description | Filter and output |
+| ------------- | :-------------: |
+| __Lowercase__<br/>Convert a string to lowercase text. | <code>&#123;{ "Spelt" \| lowercase }}</code><br/><code class="output">spelt</code> |
+| __Uppercase__<br/>Convert a string to uppercase text. | <code>&#123;{ "spelt" \| uppercase }}</code><br/><code class="output">SPELT</code> |
+| __Capitalize__<br/>Capitalize each word in a string. | <code>&#123;{ "some sentence" \| capitalize  }}</code><br/><code class="output">Some Sentence</code> |
+| __Date__<br />Convert a date to its string representation using [specified format](http://waracle.net/iphone-nsdateformatter-date-formatting-table/). | <code>&#123;{ date \| date: "EEE, MMM dd yyyy HH:mm"  }}</code><br/><code class="output">Fri, Jan 29 2016 13:42</code> |
+| __Date to string__<br />Convert a date to its default string representation using your system's localization settings. | <code>&#123;{ date \| date_to_string  }}</code><br/>e.g.: <code class="output">29 January 2016</code> |
+| __Date to RFC-822__<br />Convert a date into the RFC-822 format used for RSS feeds. | <code>&#123;{ date \| date_to_rfc822  }}</code><br/><code class="output">Fri, 29 Jan 2016 13:42:45 +0100</code> |
+| __Date to XML Schema__<br />Convert a Date into XML Schema (ISO 8601) format. | <code>&#123;{ date \| date_to_xmlschema  }}</code><br/><code class="output">2016-01-29T13:42:45+01:00</code> |
+| __Markdownify__<br />Convert a Markdown-formatted string into HTML. | <code>&#123;{ "# Title" \| markdownify  }}</code><br/><code class="output">&lt;h1>Title&lt;/h1></code> |
+| __XML Escape__<br />Escape some text for use in XML. | <code>&#123;{ post.excerpt \| xml_escape  }}</code> |
+| __URL Encode__<br />Escape some text for use in XML. | <code>&#123;{ post.excerpt \| url_encode  }}</code> |

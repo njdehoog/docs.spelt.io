@@ -13,4 +13,4 @@ Spelt is a __static site generator__ geared towards blogs. It takes your [Markdo
 
 ## That sounds great! How do I get started?
 
-Get started by [creating your first project](/create-project/).
+Get started by [creating your first project](/creating-new-project/).

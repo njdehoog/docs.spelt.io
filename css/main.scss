@@ -76,6 +76,13 @@ code {
   padding: 3px 6px;
   border-radius: 3px;
   font-size: 0.8em;
+  display: inline-block;
+  white-space: pre;
+}
+
+code.output {
+  margin-top: 5px;
+  color: #CC8833;
 }
 
 pre {
