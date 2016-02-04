@@ -3,6 +3,7 @@ layout: post
 title: Working with images
 date: 2015-01-29 12:45:18 +0100
 category: writing
+permalink: images
 ---
 
 When writing your blog posts, you'll likely want to include images at some point. A common solution is to create an `img` or `assets/img` directory in your project folder. Because of the way Spelt works, this folder will be copied as is to your generated site (this is explained in [directory structure](/directory-structure/)).
