@@ -18,4 +18,4 @@ Spelt comes with a built-in development server that allows you to load a local p
 
 When you are ready to share your work with the world you can publish it to a web server. You can either copy the contents of the `_build` folder, as generated for the preview, to your host using FTP, or you can use Spelt to publish directly to Amazon S3. Amazon S3 provides an affordable and very reliable place to host your content. For more info on this, check out [Publishing to Amazon](/amazon/).
 
-To publish your website, click the publish button (![Publish Button](/img/publish-button.png/)), or select `Blog > Publish` from the main menu.
+To publish your website, click the publish button (![Publish Button](/img/publish-button.png)), or select `Blog > Publish` from the main menu.
