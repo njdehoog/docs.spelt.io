@@ -62,6 +62,10 @@ The `ifnot` tag renders its contents when a variable is falsey (evaluates to fal
  &lt;p>Category undefined&lt;/p>
 &#123;% endif %}</code></pre>
 
+### Gists and math typesetting
+
+In addition to the standard Stencil tags, Spelt supports [embedding GitHub gists](/gists/) using the `gist` tag, and [math typesetting](/katex/) using the `katex` tag. 
+
 ## Filters
 
 Filters allow you to transform the value of a variable in your template. For example:
