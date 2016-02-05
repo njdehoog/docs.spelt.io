@@ -163,7 +163,7 @@ Output:
 
 ---------------------------------------
 
-### Code
+### <a name="code-snippets"></a>Code
 
 Spelt supports both inline code spans:
 

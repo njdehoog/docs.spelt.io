@@ -96,6 +96,15 @@ pre {
   }
 }
 
+span.math-display {
+  display: block;
+  margin-bottom: 30px;
+}
+
+span.math-display, span.math-inline {
+  font-size: 1.2em;
+}
+
 table {
   width:100%;
   border-collapse:collapse;
