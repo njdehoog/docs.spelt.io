@@ -6,7 +6,7 @@ permalink: katex
 category: writing
 ---
 
-Spelt integrates with [KaTeX](https://github.com/Khan/KaTeX) to render math expressions. Equations such as {% katex inline:true %}S_n = a \times \frac{1-r^n}{1-r}{% endkatex %}
+Spelt integrates with [KaTeX](http://khan.github.io/KaTeX/) to render math expressions. Equations such as {% katex inline:true %}S_n = a \times \frac{1-r^n}{1-r}{% endkatex %}
  can be displayed inline.
 
 Alternatively, they can be shown on a new line:
@@ -15,10 +15,21 @@ Alternatively, they can be shown on a new line:
 f(x) = \int \frac{2x^2+4x+6}{x-2}
 {% endkatex %}
 
+## Syntax
+
+Inline math expressions can be included as follows:
+
+<pre><code>&#123;% katex inline:true %}S_n = a \times \frac{1-r^n}{1-r}&#123;% endkatex %}</code></pre>
+
+To render a math expression on a new line, use this syntax:
+
+<pre><code>&#123;% katex %}
+f(x) = \int \frac{2x^2+4x+6}{x-2}
+&#123;% endkatex %}</code></pre>
 
 ## Usage
 
-To enable [KaTeX](https://github.com/Khan/KaTeX) math rendering for your theme, make sure to include the following in the `<head>` section of your HTML.
+To enable [KaTeX](http://khan.github.io/KaTeX/) math rendering for your theme, make sure to include the following in the `<head>` section of your HTML.
 
 ```
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">
