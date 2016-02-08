@@ -30,8 +30,8 @@ When you have set this variable, the following variables will become available t
 
 ## Sample index.html file
 
-```html
 {% raw %}
+```html 
 ---
 layout: default
 ---
@@ -57,6 +57,6 @@ layout: default
   {% else %}
     <span class="next ">Next</span>
   {% endif %}
-</div>
-{% endraw %}
+</div> 
 ```
+{% endraw %}

@@ -10,7 +10,11 @@ When writing your blog posts, you'll likely want to include images at some point
 
 Let's say you've created an `img` folder in your project directory and copied some images over. You can now reference these images in your blog posts like this:
 
-<pre><code>![Hiker](&#123;&#123; site.url }}/img/hiker.jpg)</code></pre>
+{% raw %}
+```
+![Hiker]({{ site.url }}/img/hiker.jpg)
+```
+{% endraw %}
 
 And they will appear on your site like this:
 
