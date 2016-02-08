@@ -3,7 +3,7 @@ layout: post
 title: Pagination
 date: 2011-02-05 13:35:41 +0100
 permalink: pagination
-category: customization
+category: templates
 ---
 
 It is common to split a list of blog posts up into multiple pages, which is called pagination. To enable pagination for your site, add the following line to your `_config.yml` file:
