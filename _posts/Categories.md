@@ -26,7 +26,7 @@ categories: space, important-questions
 ---
 ```
 
-## Templates
+## Rendering
 
 Defining a category will expose the name of that category as a variable to your template files. This variable contains a list of all blog posts assigned to that category. To render the titles of all blog posts in the _templates_ category, you could write the following:
 
