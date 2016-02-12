@@ -3,6 +3,7 @@ layout: post
 title: Introduction
 category: getting-started
 permalink: introduction
+date: 2016-02-05
 ---
 
 This guide is here to help you get started using Spelt. It covers topics such as starting a new project, creating and editing your content, customizing the look of your site and publishing your blog to the world.

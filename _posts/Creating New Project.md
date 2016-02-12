@@ -3,6 +3,7 @@ layout: post
 title: Creating a new project
 category: getting-started
 permalink: creating-new-project
+date: 2016-02-04
 ---
 
 To create a new project, select `File > New Blog` from the main menu. This will open a window where you can select the theme for your blog. Themes can be previewed in the browser by clicking the _Preview in Browser_ button.

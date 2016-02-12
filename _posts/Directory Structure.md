@@ -3,6 +3,7 @@ layout: post
 title: Directory structure
 category: getting-started
 permalink: directory-structure
+date: 2013-02-01
 ---
 
 When creating a new project, Spelt creates a folder structure similar to the one below. The structure of your project folder is important. It ensures that Spelt knows where to look for which type of files when generating your site. Spelt will help you maintain this structure, for instance, when creating a blog post from the app, it will automatically be placed in the `_posts` directory.
