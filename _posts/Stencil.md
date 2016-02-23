@@ -4,7 +4,6 @@ title: Layouts
 date: 2016-01-29 13:42:45 +0100
 category: templates
 permalink: layouts
-tags: [apples, pears]
 ---
 
 Spelt uses a customized version of [Stencil](https://github.com/kylef/Stencil) as its templating language. By setting the `layout` parameter in the [front matter](/front-matter/) of a post or page, you can determine which template file your content should be rendered into. Template files should be placed in the `_layouts` folder in your project directory.
@@ -70,30 +69,10 @@ In addition to the standard Stencil tags, Spelt supports [embedding GitHub gists
 
 Filters allow you to transform the value of a variable in your template. For example:
 
-<pre><code class="handlebars">&#123;{ title | uppercase }}</code></pre>
+{% raw %}
+```handlebars
+{{ title | uppercase }}
+```
+{% endraw %}
 
-Or:
-
-<pre><code class="handlebars">&#123;{ url | prepend: site.url }}</code></pre>
-
-Spelt currently supports the following filters:
-
-| Description | Filter and output |
-| ------------- | :-------------: |
-| __Lowercase__<br/>Convert a string to lowercase text. | <code>&#123;{ "Spelt" \| lowercase }}</code><br/><code class="output">spelt</code> |
-| __Uppercase__<br/>Convert a string to uppercase text. | <code>&#123;{ "spelt" \| uppercase }}</code><br/><code class="output">SPELT</code> |
-| __Capitalize__<br/>Capitalize each word in a string. | <code>&#123;{ "some sentence" \| capitalize  }}</code><br/><code class="output">Some Sentence</code> |
-| __Date__<br />Convert a date to its string representation using [specified format](http://waracle.net/iphone-nsdateformatter-date-formatting-table/). | <code>&#123;{ date \| date: "EEE, MMM dd yyyy HH:mm"  }}</code><br/><code class="output">Fri, Jan 29 2016 13:42</code> |
-| __Date to string__<br />Convert a date to its default string representation using your system's localization settings. | <code>&#123;{ date \| date_to_string  }}</code><br/>e.g.: <code class="output">29 January 2016</code> |
-| __Date to RFC-822__<br />Convert a date into the RFC-822 format used for RSS feeds. | <code>&#123;{ date \| date_to_rfc822  }}</code><br/><code class="output">Fri, 29 Jan 2016 13:42:45 +0100</code> |
-| __Date to XML Schema__<br />Convert a Date into XML Schema (ISO 8601) format. | <code>&#123;{ date \| date_to_xmlschema  }}</code><br/><code class="output">2016-01-29T13:42:45+01:00</code> |
-| __Markdownify__<br />Convert a Markdown-formatted string into HTML. | <code>&#123;{ "# Title" \| markdownify  }}</code><br/><code class="output">&lt;h1>Title&lt;/h1></code> |
-| __XML Escape__<br />Escape some text for use in XML. | <code>&#123;{ "this&that" \| xml_escape  }}</code><br/><div class="output">`this&amp;that`</div> |
-| __URL Encode__<br />Convert string for use in URLs by percent-encoding disallowed characters. | <code>&#123;{ "some string" \| url_encode  }}</code><br/><code class="output">some%20string</code> |
-| __Prepend__<br />Prepend characters to a string. | <code>&#123;{ ", World!" \| prepend: "Hello"  }}</code><br/><code class="output">Hello, World!</code> |
-| __Append__<br />Append characters to a string. | <code>&#123;{ "Hello" \| prepend: ", World!"  }}</code><br/><code class="output">Hello, World!</code> |
-| __Replace__<br />Replace all occurrences of a string with specified replacement. | <code>&#123;{ "Hey there!"\|replace:"there","you" }}</code><br/><code class="output">Hey you!</code> |
-| __Strip HTML__<br />Strip all HTML tags from a string. | <code>&#123;{ "&lt;h1>Hello&lt;/h1>, World!" \| strip_html }}</code><br/><code class="output">Hello, World!</code> |
-| __Strip newlines__<br />Remove line breaks/newlines from a string. | <code>&#123;{ post.excerpt \| strip_newlines }}</code> |
-| __Truncate__<br />Truncates a string to specified number of characters. | <code>&#123;{"It's raining cats and dogs"\|truncate:17}}</code><br/><code class="output">It's raining cats</code> |
-| __Join__<br />Join the elements of an array with the specified character.  | <code>&#123;{ tags \| join: ", " }}</code><br/><code class="output">static site generators, documentation</code> |
+Spelt supports many different filters, see [this page](/filters/) for a complete reference.
