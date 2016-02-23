@@ -44,15 +44,18 @@ Or:
 | __URL Encode__<br />Convert string for use in URLs by percent-encoding disallowed characters. | <code>&#123;{ "some string" \| url_encode  }}</code><br/><code class="output">some%20string</code> |
 | __Prepend__<br />Prepend characters to a string. | <code>&#123;{ ", World!" \| prepend: "Hello"  }}</code><br/><code class="output">Hello, World!</code> |
 | __Append__<br />Append characters to a string. | <code>&#123;{ "Hello" \| prepend: ", World!"  }}</code><br/><code class="output">Hello, World!</code> |
-| __Replace__<br />Replace all occurrences of a string with specified replacement. | <code>&#123;{ "Hey there!"\|replace:"there","you" }}</code><br/><code class="output">Hey you!</code> |
-| __Strip HTML__<br />Strip all HTML tags from a string. | <code>&#123;{ "&lt;h1>Hello&lt;/h1>, World!" \| strip_html }}</code><br/><code class="output">Hello, World!</code> |
+| __Replace__<br />Replace all occurrences of a string with specified replacement. | <code>&#123;{"Hey there!"\|replace:"there","you"}}</code><br/><code class="output">Hey you!</code> |
+| __Strip HTML__<br />Strip all HTML tags from a string. | <code>&#123;{"&lt;h1>Hello&lt;/h1>, World!" \| strip_html}}</code><br/><code class="output">Hello, World!</code> |
 | __Strip newlines__<br />Remove line breaks/newlines from a string. | <code>&#123;{ post.excerpt \| strip_newlines }}</code> |
-| __Truncate__<br />Truncates a string to specified number of characters. | <code>&#123;{"It's raining cats and dogs"\|truncate:17}}</code><br/><code class="output">It's raining cats</code> |
+| __Truncate__<br />Truncate a string to specified number of characters. | <code>&#123;{"It's raining cats and dogs"\|truncate:17}}</code><br/><code class="output">It's raining cats</code> |
+| __Number of words__<br />Count the number of words in some text. | {% raw %}`{{content | strip_html | number_of_words}}`{% endraw %}<br/><code class="output">42</code> |
+
 
 ## Array filters
 | Description | Filter and output |
 | ------------- | :-------------: |
-| __Join__<br />Join the elements of an array with the specified character.  | {% raw %}`{{ tags | join: ", " }}`{% endraw %}<br/><code class="output">static site generators, documentation</code> |
+| __Join__<br />Join the elements of an array with the specified character.  | {% raw %}`{{ categories | join: ", " }}`{% endraw %}<br/><code class="output">static site generators, documentation</code> |
+| __Array to sentence__<br />Convert an array into a sentence. Useful for listing tags.  | {% raw %}`{{ tags | array_to_sentence_string }}`{% endraw %}<br/><code class="output">foo, bar, and baz</code> |
 
 ## Math filters
 
