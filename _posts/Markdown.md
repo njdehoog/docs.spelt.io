@@ -100,17 +100,21 @@ Unordered (bulleted) lists use asterisks, pluses, and hyphens (*, +, and -) as l
 Markdown:
 
 ```markdown
-*   Candy.
-*   Gum.
-*   Booze.
+* Candy
+* Gum
+* Booze
+	* Bourbon
+	* Gin
 ```
 
 Output:
 
 ---------------------------------------
-*   Candy.
-*   Gum.
-*   Booze.
+* Candy
+* Gum
+* Booze
+	* Bourbon
+	* Gin
 
 ---------------------------------------
 
