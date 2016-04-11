@@ -29,4 +29,5 @@ There are a number of predefined variables that you can set in the front matter 
 | `title`  | The title of your blog post or page.  |
 | `date` | The date of the post. Dates must be specified in the format `YYYY-MM-DD HH:MM:SS +/-TTTT`. Hours, minutes, seconds, and timezone offset are optional.  |
 | `layout`  | If defined, this specifies which layout to use. Layout files must be placed in the `_layouts` directory.  |
+| `permalink` | Set this variable to define the URL for this post or page in the generated site. By default, blog post permalinks are generated using this format: `/year/month/day/title.html`
 | `category`<br/>`categories` | You can specify one or more categories a blog post belongs to. Categories (plural) can be specified as a [YAML list](http://en.wikipedia.org/wiki/YAML#Lists) or a comma-separated string. |
