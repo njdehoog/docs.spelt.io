@@ -133,6 +133,10 @@ header {
   width:270px;
   float:left;
   position:fixed;
+  top: 0;
+  bottom: 0;
+  padding-top:50px;
+  overflow-y: auto;
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
